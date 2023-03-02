@@ -1,168 +1,25 @@
 import React from "react";
+import CategoryItem from "../../components/CategoryItem";
 
 const Categories = () => {
   return (
-    <div class="container-fluid pt-5">
-      <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
-        <span class="bg-secondary pr-3">Categories</span>
+    <div className="container-fluid pt-5">
+      <h2 className="section-title position-relative text-uppercase mx-xl-5 mb-4">
+        <span className="bg-secondary pr-3">Categories</span>
       </h2>
-      <div class="row px-xl-5 pb-3">
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-2.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-3.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-4.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-4.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-3.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-2.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-2.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-1.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-4.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 pb-1">
-          <a class="text-decoration-none" href="">
-            <div class="cat-item img-zoom d-flex align-items-center mb-4">
-              <div class="overflow-hidden" style="width: 100px; height: 100px;">
-                <img class="img-fluid" src="img/cat-3.jpg" alt="" />
-              </div>
-              <div class="flex-fill pl-3">
-                <h6>Category Name</h6>
-                <small class="text-body">100 Products</small>
-              </div>
-            </div>
-          </a>
-        </div>
+      <div className="row px-xl-5 pb-3">
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
+        <CategoryItem></CategoryItem>
       </div>
     </div>
   );
