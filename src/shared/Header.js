@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -233,35 +234,31 @@ const Header = () => {
                 id="navbarCollapse"
               >
                 <div className="navbar-nav mr-auto py-0">
-                  <a href="index.html" className="nav-item nav-link active">
+                  <Link to="/" className="nav-item nav-link">
                     Home
-                  </a>
-                  <a href="shop.html" className="nav-item nav-link">
+                  </Link>
+                  <Link to="/shop" className="nav-item nav-link">
                     Shop
-                  </a>
-                  <a href="detail.html" className="nav-item nav-link">
-                    Shop Detail
-                  </a>
+                  </Link>
                   <div className="nav-item dropdown">
-                    <a
-                      href="#"
-                      className="nav-link dropdown-toggle"
+                    <button
+                      className="nav-link dropdown-toggle btn btn-link"
                       data-toggle="dropdown"
                     >
                       Pages <i className="fa fa-angle-down mt-1"></i>
-                    </a>
+                    </button>
                     <div className="dropdown-menu bg-primary rounded-0 border-0 m-0">
-                      <a href="cart.html" className="dropdown-item">
+                      <Link to="/shopping-cart" className="dropdown-item">
                         Shopping Cart
-                      </a>
-                      <a href="checkout.html" className="dropdown-item">
+                      </Link>
+                      <Link to="/checkout" className="dropdown-item">
                         Checkout
-                      </a>
+                      </Link>
                     </div>
                   </div>
-                  <a href="contact.html" className="nav-item nav-link">
+                  <Link to="/contact-us" className="nav-item nav-link">
                     Contact
-                  </a>
+                  </Link>
                 </div>
                 <div className="navbar-nav ml-auto py-0 d-none d-lg-block">
                   <a href="" className="btn px-0">
