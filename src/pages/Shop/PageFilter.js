@@ -1,34 +1,39 @@
-import React from "react";
-
-const PageFilter = () => {
+import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
+import ReactPaginate from "react-paginate";
+const PageFilter = ({ skip, setSkip, activePage, setActivePage }) => {
+  const pages = [1, 2, 3, 4];
+  const nextButton = () => {
+    setSkip(skip + 10);
+    setActivePage(activePage + 1);
+  };
+  const prevButton = () => {
+    setSkip(skip - 10);
+    setActivePage(activePage - 1);
+  };
   return (
     <div className="col-12">
       <nav>
         <ul className="pagination justify-content-center">
-          <li className="page-item disabled">
-            <a className="page-link" href="#">
+          <li className={`page-item ${activePage === 1 && "disabled"} `}>
+            <button onClick={prevButton} className="page-link">
               Previous
-            </a>
+            </button>
           </li>
-          <li className="page-item active">
-            <a className="page-link" href="#">
-              1
-            </a>
-          </li>
+          {pages.map((page) => (
+            <li
+              key={page}
+              className={`page-item ${page === activePage && "active"} `}
+            >
+              <a className="page-link" href="#">
+                {page}
+              </a>
+            </li>
+          ))}
           <li className="page-item">
-            <a className="page-link" href="#">
-              2
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
-              3
-            </a>
-          </li>
-          <li className="page-item">
-            <a className="page-link" href="#">
+            <button onClick={() => nextButton()} className="page-link" href="#">
               Next
-            </a>
+            </button>
           </li>
         </ul>
       </nav>

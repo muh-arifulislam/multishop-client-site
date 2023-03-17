@@ -1,6 +1,6 @@
 import React from "react";
 
-const Sorting = () => {
+const Sorting = ({ limit, setLimit }) => {
   return (
     <div className="col-12 pb-1">
       <div className="d-flex align-items-center justify-content-between mb-4">
@@ -42,15 +42,24 @@ const Sorting = () => {
               Showing
             </button>
             <div className="dropdown-menu dropdown-menu-right">
-              <a className="dropdown-item" href="#">
-                10
-              </a>
-              <a className="dropdown-item" href="#">
-                20
-              </a>
-              <a className="dropdown-item" href="#">
-                30
-              </a>
+              <button
+                onClick={() => setLimit(9)}
+                className={`dropdown-item ${limit === 9 && "active"}`}
+              >
+                9
+              </button>
+              <button
+                onClick={() => setLimit(18)}
+                className={`dropdown-item ${limit === 18 && "active"}`}
+              >
+                18
+              </button>
+              <button
+                onClick={() => setLimit(36)}
+                className={`dropdown-item ${limit === 36 && "active"}`}
+              >
+                36
+              </button>
             </div>
           </div>
         </div>
